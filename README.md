@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I read the errors on my rails server and it indicated there was a typo on the application controller. Once I solved it then new toys were succesifully added to the database,
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: I checked the browser console and tracked the error to the likes handlesubmit function. The funtion was trying to convert a response to json  while no response was being sent back. I edited the application controller to send back the updated record in json after a successful patch and an okay status. This solved the error
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: I checked the network tab on chrome. It was indicating that the route was not found. I checked the routes folder to see if the route exists and found it does exist so I added it and it solved the error.
